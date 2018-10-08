@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import "../vars";
+
+/* Table Of Contents
+----------------------------------------------------------------------------
+General Elements
+header
+gNav
+visual
+topicPath
+footer
+---------------------------------------------------------------------------- */
+
+
+/*General Elements
+---------------------------------------------------------------------------- */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-display: swap;
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/*c-header
+---------------------------------------------------------------------------- */
+.c-header {
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* c-gNav
+---------------------------------------------------------------------------- */
+.c-gNav {
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* c-breadcrumb
+---------------------------------------------------------------------------- */
+.c-breadcrumb {
+    list-style:  none;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* c-pageBody
+---------------------------------------------------------------------------- */
+.c-pageBody {
+    width: 100%;
+    min-width: 1180px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+    .c-pageBody {
+        min-width: 0;
+    }
+}
+
+
+/* c-sidebar
+---------------------------------------------------------------------------- */
+.c-sidebar {
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* c-pageTop
+---------------------------------------------------------------------------- */
+.c-pageTop {
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* c-footer
+---------------------------------------------------------------------------- */
+.c-footer {
+}
+
+.c-footer--copy {
+    text-align: center;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}

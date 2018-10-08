@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+// wp管理画面用CSS
+
+// 共通変数・関数読み込み
+@import "../vars";
+
+// ビジュアルエディターを非表示にする
+#postdivrich {
+    display: none;
+}
+
+/* カテゴリー */
+#category-tabs, #category-adder {
+	display:none;
+}
+
+/* カスタムタクソノミー（xxxxxxx01を非表示） */
+#customposttype01_category-tabs,
+#customposttype01_category-adder {
+	display:none;
+}
+
+/* カスタムタクソノミー（xxxxxxx02を非表示） */
+#customposttype02_category-tabs,
+#customposttype02_category-adder {
+	display:none;
+}
+
+// 「新規カテゴリーを追加」と「よく使うもの」を非表示にする
+.categorydiv {
+	.tabs-panel {
+		padding: 0 !important;
+		background: none;
+		border: none !important;
+	}
+}
+
+// アイキャッチ設定でSVG画像のサムネイルを表示できるようにする
+td.media-icon img[src$=".svg"],
+img[src$=".svg"].attachment-post-thumbnail,
+#set-post-thumbnail img[src$=".svg"]{
+	width: 100% !important;
+	height: auto !important;
+}

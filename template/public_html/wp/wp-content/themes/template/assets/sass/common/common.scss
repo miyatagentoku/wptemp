@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+// 共通変数・関数読み込み
+@import "../vars";
+
+
+/* Webフォント
+---------------------------------------------------------------------------- */
+// 源ノ角ゴシック読み込み
+@import "../font_notosans";
+
+
+/* .m-container
+---------------------------------------------------------------------------- */
+.m-container {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* タイトル系
+---------------------------------------------------------------------------- */
+.m-title01 {
+    @include font-size(20);
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+    .m-title01 {
+        @include font-size(18);
+    }
+}
+
+
+/* ボタン系
+---------------------------------------------------------------------------- */
+.m-button01 {
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+
+/* パーツ系
+---------------------------------------------------------------------------- */
+
+
+/* その他
+---------------------------------------------------------------------------- */
+/*-- ページナビゲーション --*/
+.m-pageNavi {
+}
+.m-pageNavi a {
+}
+.m-pageNavi a:hover {
+}
+.m-pageNavi .current {
+}
+.m-pageNavi .prev,
+.m-pageNavi .next {
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+}
+
+// モジュール読み込み
+@import "../module";

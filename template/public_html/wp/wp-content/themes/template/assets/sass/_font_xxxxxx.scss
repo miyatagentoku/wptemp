@@ -1,0 +1,83 @@
+@font-face {
+    font-family: '';
+    font-style: normal;
+    font-weight: 100;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 300;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 500;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 700;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 900;
+    src: url(".woff2") format("woff2"),url(".woff") format("woff"), url(".ttf") format("truetype");
+}
+
+.font-xxxxx-thin {
+    font-weight: 100;
+    font-family: '';
+}
+
+.font-xxxxx-light {
+    font-weight: 200;
+    font-family: '';
+}
+
+.font-xxxxx-demi-light {
+    font-weight: 300;
+    font-family: '';
+}
+
+.font-xxxxx-regular {
+    font-weight: 400;
+    font-family: '';
+}
+
+.font-xxxxx-medium {
+    font-weight: 500;
+    font-family: '';
+}
+
+.font-xxxxx-bold {
+    font-weight: 700;
+    font-family: '';
+}
+
+.font-xxxxx-black {
+    font-weight: 900;
+    font-family: '';
+}

@@ -1,0 +1,6 @@
+// 共通関数
+
+@mixin font-size ( $fs ) {
+	font-size: #{$fs}px;
+	font-size: #{$fs / 10}rem;
+}

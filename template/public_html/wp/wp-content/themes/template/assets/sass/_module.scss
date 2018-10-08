@@ -1,0 +1,267 @@
+// モジュール
+
+@import "vars";
+
+/* マージン
+---------------------------------------------------------------------------- */
+
+@for $i from 0 through 20 {
+  .mt#{$i * 5} {
+    margin-top: #{$i * 5}px !important;
+  }
+  .mt#{$i * -5} {
+        margin-top: #{$i * -5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .spmt#{$i * 5} {
+      margin-top: #{$i * 5}px !important;
+    }
+    .spmt#{$i * -5} {
+      margin-top: #{$i * -5}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px !important;
+  }
+  .mb#{$i * -5} {
+    margin-bottom: #{$i * -5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .spmb#{$i * 5} {
+      margin-bottom: #{$i * 5}px !important;
+    }
+    .spmb#{$i * -5} {
+      margin-bottom: #{$i * -5}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .ml#{$i * 5} {
+    margin-left: #{$i * 5}px !important;
+  }
+  .ml#{$i * -5} {
+    margin-left: #{$i * -5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .spml#{$i * 5} {
+      margin-left: #{$i * 5}px !important;
+    }
+    .spml#{$i * -5} {
+      margin-left: #{$i * -5}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .mr#{$i * 5} {
+    margin-right: #{$i * 5}px !important;
+  }
+  .mr#{$i * -5} {
+    margin-right: #{$i * -5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .spmr#{$i * 5} {
+      margin-right: #{$i * 5}px !important;
+    }
+    .spmr#{$i * -5} {
+      margin-right: #{$i * -5}px !important;
+    }
+  }
+}
+
+
+/* パディング
+---------------------------------------------------------------------------- */
+
+@for $i from 0 through 20 {
+  .pt#{$i * 5} {
+    padding-top: #{$i * 5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .sppt#{$i * 5} {
+      padding-top: #{$i * 5}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .pb#{$i * 5} {
+    padding-bottom: #{$i * 5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .sppb#{$i * 5} {
+      padding-bottom: #{$i * 5}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .pl#{$i * 5} {
+    padding-left: #{$i * 5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .sppl#{$i * 5} {
+      padding-left: #{$i * 5}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .pr#{$i * 5} {
+    padding-right: #{$i * 5}px !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 0 through 20 {
+    .sppr#{$i * 5} {
+      padding-right: #{$i * 5}px !important;
+    }
+  }
+}
+
+/* フォントサイズ
+---------------------------------------------------------------------------- */
+
+@for $i from 10 through 50 {
+  .fs#{$i} {
+    font-size: #{$i}px !important;
+    font-size: #{$i / 10}rem !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 10 through 50 {
+    .spfs#{$i} {
+      font-size: #{$i}px !important;
+      font-size: #{$i / 10}rem !important;
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .ls#{$i} {
+    letter-spacing: #{$i / 10}em !important;
+  }
+  .ls-#{$i} {
+    letter-spacing: #{($i / 10) * -1}em !important;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  @for $i from 1 through 20 {
+    .spls#{$i} {
+      letter-spacing: #{$i / 10}em !important;
+    }
+    .spls-#{$i} {
+      letter-spacing: #{($i / 10) * -1}em !important;
+    }
+  }
+}
+
+.lh1 {
+  line-height: 1;
+}
+@for $i from 11 through 20 {
+  .lh#{$i} {
+    line-height: #{$i / 10};
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  .splh1 {
+    line-height: 1;
+  }
+  @for $i from 11 through 20 {
+    .splh#{$i} {
+      line-height: #{$i / 10};
+    }
+  }
+}
+
+.ti0 {
+  text-indent: normal;
+}
+.ti1 {
+  text-indent: 1rem;
+}
+@for $i from 11 through 100 {
+  .ti#{$i} {
+    text-indent: #{$i / 10}rem;
+  }
+  .ti-#{$i} {
+    text-indent: #{($i / 10) * -1}rem;
+  }
+}
+@media screen and (max-width: #{$breakpoint}px){
+  .spti0 {
+    text-indent: normal;
+  }
+  .spti1 {
+    text-indent: 1rem;
+  }
+  @for $i from 11 through 100 {
+    .spti#{$i} {
+      text-indent: #{$i / 10}rem;
+    }
+    .spti-#{$i} {
+      text-indent: #{($i / 10) * -1}rem;
+    }
+  }
+}
+
+.tac {
+  text-align: center !important;
+}
+.tal {
+  text-align: left !important;
+}
+.tar {
+  text-align: right !important;
+}
+
+.vat {
+  vertical-align: top !important;
+}
+.vam {
+  vertical-align: middle !important;
+}
+.vab {
+  vertical-align: bottom !important;
+}
+
+.flR {
+  float: right;
+}
+.flL {
+  float: left;
+}
+
+.nopc{
+  display: none;
+}
+.nosp{
+  display: block;
+}
+@media screen and (max-width: #{$breakpoint}px){
+  .nopc{
+    display: block;
+  }
+  .nosp{
+    display: none;
+  }
+}
